@@ -1,0 +1,120 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    padding: 25px 15px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.logo__colored {
+    color: #000
+}
+
+.header__menu-list {
+    display: flex;
+}
+
+.header__menu-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.header__menu-link {
+    position: relative;
+    font-weight: 500;
+    transition: color 250ms var(--cubic-b);
+}
+
+.header__menu-link::before {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -34px;
+    background-color: var(--third-color);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: 250ms var(--cubic-b);
+}
+
+.header__menu-link--selected::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -34px;
+    background-color: var(--third-color);
+    border-radius: 2px;
+}
+
+.header__menu-link:hover::before {
+    transform: scaleX(1);
+}
+
+.header__menu-link--selected {
+    color: var(--third-color);
+}
+
+.header__menu-link:hover,
+.header__contacts-link:hover {
+    color: var(--third-color);
+}
+
+.header__menu-link:focus,
+.header__contacts-link:focus {
+    color: var(--third-color);
+    outline-color: var(--third-color);
+}
+
+.header__contacts-link:hover 
+.header__contacts-img {
+    fill: var(--third-color);
+}
+
+.header__contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header__contacts-item +
+.header__contacts-item {
+    margin-left: 50px;
+}
+
+.header__contacts-link {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-weight: 500;
+    transition: color 250ms var(--cubic-b);
+}
+
+.header__contacts-img {
+    margin-right: 10px;
+    fill: var(--main-color);
+    transition: 0.4s;
+}
+

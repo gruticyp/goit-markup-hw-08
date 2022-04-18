@@ -1,0 +1,118 @@
+.footer {
+    padding: 60px 15px;
+
+    // .footer__box
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    // .footer__logo
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+        
+    }
+
+    // .footer__item
+
+    &__item:not(:first-child) {
+        margin-top: 9px;
+    }
+
+    // .footer__link
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 24px;
+        font-style: normal;
+        transition: 250ms $cubic-b;
+
+        &:hover {
+            color: $third-color;
+        }
+
+        &:focus {
+            color: $white-color;
+            background-color: $third-color;
+            outline-color: $third-color;
+        }
+    }
+
+    // .footer__link--adress
+
+    &__link--adress {
+        color: $white-color;
+    }
+
+    // .footer__social
+
+    &__social {
+        max-width: 206px;
+        margin-left: 70px;
+    }
+
+    // .footer__text
+
+    &__text,
+    &__mail-text {
+        color: $white-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px; 
+    }
+
+    // .footer__mailing-form
+
+    &__mailing-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // .footer__mailing-input
+
+    &__mailing-input {
+        width: 358px;
+        margin-right: 12px;
+        padding: 15px 16px;
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        outline: transparent;
+        color: $white-color;
+
+        &::placeholder {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    // .footer__mailing-btn
+
+    &__mailing-btn {
+        display: flex;
+        align-items: center;
+        padding: 10px 29px;
+    }
+
+    // .footer__mailing-svg
+
+    &__mailing-svg {
+        fill: $white-color;
+        margin-left: 10px;
+    }
+}
+
+.footer {
+    background-color: #2F303A;
+}
+.footer__logo>span {
+    color: $white-color;
+}
+
+
+

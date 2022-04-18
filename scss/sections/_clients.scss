@@ -1,0 +1,45 @@
+.clients {
+    padding: 94px 15px;
+    
+    // .clients__title
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    // .clients__list
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+     // .clienst__item
+
+    &__item {
+        padding: 16px 32px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        transition: 250ms $cubic-b;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $third-color;
+        }
+
+        &:hover .clients__svg {
+            fill: $third-color;
+        }
+    }
+
+    // .clients__svg
+
+    &__svg {
+        fill: #AFB1B8;
+        transition: 0.4s;
+        height: 60px;
+        max-width: 106px;
+    }
+   
+}
+
