@@ -1,10 +1,21 @@
 .header {
-    padding: 25px 15px;
+    
     border-bottom: 1px solid #ECECEC;
 
-		// .header__box
+    // @media  (max-widht: 768px) {
+    //     padding: 10px 15px ;
+    // }
 
-		&__box {
+    @media  (min-widht: 769px) and (max-widht: 1200px) {
+        padding: 21px 15px;
+    }
+
+    @media  (min-widht: 1201px) {
+        padding: 25px 15px;
+
+		// .header__desktop
+
+		&__desktop {
             display: flex;
             align-items: center;
 		}
@@ -72,9 +83,6 @@
                 border-radius: 2px;
             }
             
-            
-                
-
         }
 
 		// .header__contacts
@@ -118,5 +126,6 @@
             fill: $main-color;
             transition: 0.4s;
 		}
+    }   
 }
 

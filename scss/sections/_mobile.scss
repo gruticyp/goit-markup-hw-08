@@ -1,0 +1,54 @@
+.header {
+
+    @media (min-widht: 768px) {
+        .header__mobile {
+            display: none;
+        }
+    }
+
+    @media (max-widht: 768px) {
+        padding: 16px 15px;
+       
+    
+    }
+
+    
+
+
+
+
+
+
+
+
+    // &__menu-box {
+
+    //     @media (max-widht: 768px) {
+    //         position: fixed;
+    //         width: 100%;
+    //         height: 100%;
+    //         top: 0;
+    //         left: 0;
+    //         background-color: $white-color;
+    //         padding: 48px 40px;
+    //     }
+        
+
+    //     @media (max-widht: 768px) {
+            
+    //     }
+    // }
+
+    // &__menu-item {
+    //     margin-bottom: 32px;
+    // }
+
+    // &__menu-link {
+    //     font-weight: 500;
+    //     font-size: 40px;
+    //     line-height: 47px;
+    //     letter-spacing: 0.02em;
+
+    //     color: #212121;
+    // }
+}
