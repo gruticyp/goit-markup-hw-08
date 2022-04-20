@@ -5,7 +5,7 @@
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        
         align-items: baseline;
 
     }
@@ -53,7 +53,7 @@
 
     &__social {
         max-width: 206px;
-        margin-left: 70px;
+
     }
 
     // .footer__text
@@ -120,6 +120,41 @@
         &__box {
             flex-direction: column;
         }
+
+        &__mailing-form {
+            justify-content: center;
+        }
+
+        &__box {
+            align-items: center;
+
+        }
+
+        &__text,
+        &__mail-text {
+            text-align: center;
+        }
+
+        &__url {
+            text-align: center;
+        }
+
+        &__address {
+            text-align: center;
+        }
+
+        &__list {
+            margin-bottom: 60px;
+        }
+
+        &__mailing-input {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .social {
+        margin-bottom: 60px;
     }
     
 }
@@ -129,6 +164,18 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .footer {
+
+        &__box {
+            justify-content: space-between;
+        }
+
+        &__social {
+            margin-left: 70px;
+        }
+
+        
+    }
 
 }
 
