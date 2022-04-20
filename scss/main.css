@@ -689,6 +689,7 @@ body {
   }
   .footer__mailing-input {
     margin-bottom: 20px;
+    width: 100%;
   }
   .social {
     margin-bottom: 60px;
@@ -1003,6 +1004,21 @@ body {
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/hero/hero-backround.jpg) center/cover no-repeat;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/hero-backround.jpg) center/cover no-repeat;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero__button {
+  padding: 10px 32px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
