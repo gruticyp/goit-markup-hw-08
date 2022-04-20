@@ -6,6 +6,7 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     // .benefits__item
@@ -23,7 +24,7 @@
 
         border-radius: 4px; 
         margin-bottom: 30px;
-        max-width: 270px;
+        // max-width: 270px;
         height: 120px;
         background-color: #F5F4FA;
     }
@@ -56,5 +57,63 @@
         font-weight: 400;
         line-height: 1.7;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .benefits {
+        padding: 60px 15px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            max-width: 450px;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__content {
+            max-width: 100%;
+        }
+
+
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .benefits {
+        padding: 60px 15px;
+
+        &__item {
+            max-width: 354px;
+        }
+
+        &__item:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+
+        &__icon {
+             width: 100%;
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 

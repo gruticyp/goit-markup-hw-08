@@ -7,6 +7,7 @@
     &__filter {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         margin-bottom: 50px;
     }
 
@@ -19,7 +20,7 @@
     // .portfolio__filter-btn
 
     &__filter-btn {
-            border-radius: 4px;
+         border-radius: 4px;
         border: none;
         padding: 6px 22px;
         transition: 0.4s;
@@ -32,6 +33,7 @@
 
         background: #F5F4FA;
         color: $second-color;
+        margin-bottom: 15px;
 
         &:hover,
         &:focus {
@@ -129,4 +131,27 @@
         line-height: 1.85;
         color: $main-color;
     }
+}
+@media screen and (max-width: 767px) {
+    .portfolio {
+        padding: 60px 15px 0;
+
+        &__filter {
+            margin-bottom: 25px;
+            justify-content: start;
+
+        }
+
+    
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
