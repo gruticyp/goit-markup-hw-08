@@ -161,6 +161,40 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+        &__box {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__mailing {
+            margin-top: 60px;
+        }
+
+        &__mailing-btn {
+            margin: 0 auto;
+           
+        }
+
+        &__mailing-form {
+            display: block;
+
+        }
+
+        &__mailing-input {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+
+        &__mail-text {
+            text-align: center;
+        }
+
+        
+    }
+
+
+
     
 }
 
