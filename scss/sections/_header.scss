@@ -317,6 +317,10 @@
              &__menu-link--selected::after {
                 bottom: -44px;
              }
+
+             &__menu-link::before {
+                 bottom: -44px;
+             }
     }
 
 
